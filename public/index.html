@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title">sign in || HISend</title>
+        <link rel="stylesheet" href="signin.css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" >
+    </head>
+    <body>
+        <div id="first_screen" >
+            <div id="form" >
+                <div id="signup_scr" >
+                    <h1>
+                        Sign up
+                    </h1>
+                    <input type="username" placeholder="name" id="name_inp" ><br />
+                    <input type="email" placeholder="example@email.com" id="email" ><br />
+                    <input type="password" placeholder="*********" id="pass_inp" ><br />
+                    <input type="submit" id="sub_btn" value="submit and signup" >
+                    <p class="center">or</p><br />
+                    <a href="#" id="go_to_login" ><button class="change">log in</button></a>
+                </div>
+                <div id="login_scr">
+                    <h1>Login</h1>
+                    <input type="username" id="name_inp_log" placeholder="entar your name"><br />
+                    <input type="password" id="pass_inp_log" placeholder="************" ><br />
+                    <input type="submit" id="sub_log_btn" value="submit and login" >
+                    <p class="center">or</p><br />
+                    <a href="#" id="go_to_signup" ><button class="change">sign up</button></a>
+                </div>
+            </div>
+            <!--<div id="news" >
+                <h1>Welcome To The Chatter Webapp!</h1>
+                <p>a good chatting webapp for you</p>
+                <div id="empty">
+                    sorry! now it's empty😔
+                </div>
+            </div> -->
+        </div>
+        <div id="contacts" >
+            <div class="navbar" >
+                <h1 id="name_context"></h1>
+                <h5 style="color:gray;" id="id_context" ></h5>
+            </div>
+            <div id="show_contacts" >
+                <div id="contact" onclick="go_to_chat(my_contacts[0])">
+                    <h3>global</h3>
+                </div>
+            </div>
+            <button onclick="go_add_a_contact()" id="add_btn" >+</button>
+        </div>
+        <div id="add_a_contact_scr" >
+            <button class="back" onclick="back_from_add_a_contact()" >back</button>
+            <h1>Add a contact</h1>
+            <input type="text" id="name_of_contact_inp" placeholder="Type the contact's name" ><br />
+            <button id="search_contact_btn" class="change" >Search</button>
+        </div>
+        <div id="chat" >
+            <div class="navbar" id="chat_navbar">
+                <h1 id="contact_name" ></h1>
+                <h4 id="name_context"></h4>
+                <h5 style="color:gray;" id="id_context" ></h5>
+                <button id="back_from_contacts_btn" >Back</button>
+            </div>
+            <div id="massages" ></div>
+            <div id="context_of_input" >
+                <input id="massage_text" type="text" placeholder="type your message" >
+                <button id="send_btn" >
+                    <span class="material-symbols-outlined">
+                    send
+                    </span>
+                </button>
+            </div>
+        </div>
+        <script src="socket.io/socket.io.js" ></script>
+        <script src="index.js" ></script>
+    </body>
+</html>

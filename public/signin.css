@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+}
+
+#my_massage{
+    background-size: 300% 300%;
+    background-color: #ff357f;
+    background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+    color: #fff;
+    text-align: right;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    margin: 8px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+  
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+input {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+}
+h1 {
+    cursor: default;
+}
+#form {
+    margin: 10px;
+}
+#news {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: default;
+}
+#empty {
+    text-align: center;
+    color: gray;
+}
+@keyframes input_hover {
+    0% {box-shadow: none;}
+    100% {box-shadow: 2px 2px 10px gray;}
+}
+input:hover {
+    animation: input_hover 1s;
+    box-shadow: 2px 2px 10px gray;
+}
+#send_btn {
+    background-color:#ff357f;
+    color:#303030;
+    border: 2px solid #ff8fb8;
+    border-radius: 15%;
+    text-align: center;
+}
+#context_of_input {
+    background-color: transparent;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#massage_text {
+    width: 90%;
+    text-align: left;
+    background-color: whitesmoke;
+}
+#massages {
+    position: fixed;
+    bottom: 67px;
+    top: 74.18px;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    background-color: white;
+}
+#first_screen {
+    display: block;
+}
+#chat {
+    display: none;
+}
+#name_context {
+    margin-bottom: 8px;
+    color: #303030;
+}
+#my_massage{
+    background-color: #ff357f;
+    background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+    color: #fff;
+    text-align: right;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    margin: 8px;
+}
+#their_massage {
+    background-color: #232323;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    margin: 8px;
+}
+#contact {
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+#contacts {
+    display: none;
+}
+#back_from_contacts_btn, .back {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    background-color: #303030;
+    border: 1px solid gray;
+    color: white;
+}
+#add_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff357f;
+    color: white;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    font-size: large;
+    border: none;
+}
+
+
+#add_a_contact_scr {
+    display: none;
+    background-color: aliceblue;
+    text-align: center;
+    position: fixed;
+    top: 8px;
+    left: 40%;
+    right: 40%;
+}
+
+@media only screen and (max-width: 950px) {
+    #news{
+        display: none;
+    }
+    #form {
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #signup_scr, #login_scr {
+        background-color: whitesmoke;
+        position: fixed;
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        
+    }
+    body {
+        display: block;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    #signup_scr, #login_scr {
+        width: 30%;
+    }
+}
+
+#signup_scr, #login_scr {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    text-align: center;
+    height: 50%;
+}
+
+#login_scr {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.navbar {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+
+.change {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(232, 240, 254);
+}
+
+#name_of_contact_inp {
+    width: 30%;
+    margin: 8px;
+}

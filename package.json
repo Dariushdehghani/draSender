@@ -1,0 +1,16 @@
+{
+  "name": "chat2",
+  "version": "1.0.1",
+  "description": "a private and group chat",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "Dariush D.f",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^4.5.4",
+    "uuid": "^9.0.0"
+  }
+}
