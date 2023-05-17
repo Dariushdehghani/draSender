@@ -15,7 +15,7 @@ const  {  v4 : uuidv4  }  =  require ( 'uuid' ) ;
 
 //data base
 const sqlite = require("sqlite3").verbose();
-db = new sqlite.Database('./data/data.sqlite')
+db = new sqlite.Database('data.sqlite')
 
 // setup express
 app.get('/', (_, res) => {
